@@ -60,6 +60,9 @@ $(function () {
      });
 
 
+	 $(document).ready(function(){
+		popUp();
+	  });
 });
 
 
@@ -73,7 +76,11 @@ function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
 
-
+function popUp(){
+	$(window).load(function(){        
+	   $('#myModal').modal('show');
+	});
+}
 
 
 
